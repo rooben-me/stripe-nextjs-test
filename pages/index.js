@@ -52,7 +52,7 @@ export default function Home() {
       </Head>
 
       <form onSubmit={handleSubmit}>
-        <PaymentElement />
+        <PaymentElement  />
         <button disabled={!stripe}>Submit</button>
         {/* Show error message to your customers */}
         {errorMessage && <div>{errorMessage}</div>}
