@@ -55,7 +55,7 @@ export default function Home() {
 
       <form
         onSubmit={handleSubmit}
-        className="min-h-screen flex items-center justify-center"
+        className="min-h-screen flex flex-col items-center justify-center"
       >
         <PaymentElement />
         <button
