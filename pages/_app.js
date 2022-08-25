@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   const options = {
     // passing the client secret obtained in step 2
     clientSecret:
-      "seti_1LVbYPLcLvxMXzdFtZR8QNqP_secret_ME3fFlbvhLIpEb3T1CFrCCW0CVi9WZv",
+      "seti_1LaenSLcLvxMXzdFYD10Dx8V_secret_MJHMdxkDPLdt5MHAVA3PGjTl0Gr5vfn",
   };
 
   return (

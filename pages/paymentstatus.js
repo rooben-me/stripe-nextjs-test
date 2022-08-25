@@ -13,7 +13,7 @@ const PaymentStatus = () => {
     // Retrieve the "setup_intent_client_secret" query parameter appended to
     // your return_url by Stripe.js
     const clientSecret = new URLSearchParams(window.location.search).get(
-      "seti_1LVbYPLcLvxMXzdFtZR8QNqP_secret_ME3fFlbvhLIpEb3T1CFrCCW0CVi9WZv"
+      "seti_1LaenSLcLvxMXzdFYD10Dx8V_secret_MJHMdxkDPLdt5MHAVA3PGjTl0Gr5vfn"
     );
 
     // Retrieve the SetupIntent
