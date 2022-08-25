@@ -23,12 +23,13 @@ export default function Home() {
       return;
     }
 
-    const { error } = await stripe.confirmSetup({
+    const { setupIntent, error } = await stripe.confirmSetup({
       //`Elements` instance that was used to create the Payment Element
       elements,
-      confirmParams: {
-        return_url: "https://google.com",
-      },
+      redirect: "if_required",
+      // confirmParams: {
+      //   return_url: "https://google.com",
+      // },
     });
 
     if (error) {
@@ -40,6 +41,7 @@ export default function Home() {
       // Your customer will be redirected to your `return_url`. For some payment
       // methods like iDEAL, your customer will be redirected to an intermediate
       // site first to authorize the payment, then redirected to the `return_url`.
+      console.log("setupIntent...", setupIntent);
     }
   };
 
