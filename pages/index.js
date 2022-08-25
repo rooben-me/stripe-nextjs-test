@@ -53,10 +53,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        className="min-h-screen flex items-center justify-center"
+      >
         <PaymentElement />
         <button
-          className="bg-indigo-500 px-4 py-1.5 rounded-md"
+          className="bg-indigo-500 text-white font-semibold mt-8 px-4 py-1.5 rounded-md"
           disabled={!stripe}
         >
           Submit
