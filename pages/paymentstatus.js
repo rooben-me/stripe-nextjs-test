@@ -13,7 +13,7 @@ const PaymentStatus = () => {
     // Retrieve the "setup_intent_client_secret" query parameter appended to
     // your return_url by Stripe.js
     const clientSecret = new URLSearchParams(window.location.search).get(
-      "seti_1LaenSLcLvxMXzdFYD10Dx8V_secret_MJHMdxkDPLdt5MHAVA3PGjTl0Gr5vfn"
+      "seti_1Laf2KLcLvxMXzdFVcSi0fuO_secret_MJHbxRk1WfaTkcrlZ3xaOi3IfeUi0mM"
     );
 
     // Retrieve the SetupIntent
@@ -47,7 +47,17 @@ const PaymentStatus = () => {
     });
   }, [stripe]);
 
-  return <>{message || "rooben"}</>;
+  return (
+    <>
+      {message && (
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="bg-indigo-100 text-indigo-700 rounded-md">
+            {message}
+          </div>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default PaymentStatus;

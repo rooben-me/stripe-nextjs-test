@@ -52,8 +52,13 @@ export default function Home() {
       </Head>
 
       <form onSubmit={handleSubmit}>
-        <PaymentElement  />
-        <button disabled={!stripe}>Submit</button>
+        <PaymentElement />
+        <button
+          className="bg-indigo-500 px-4 py-1.5 rounded-md"
+          disabled={!stripe}
+        >
+          Submit
+        </button>
         {/* Show error message to your customers */}
         {errorMessage && <div>{errorMessage}</div>}
       </form>
