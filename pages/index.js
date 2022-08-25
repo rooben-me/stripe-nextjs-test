@@ -27,9 +27,9 @@ export default function Home() {
       //`Elements` instance that was used to create the Payment Element
       elements,
       redirect: "if_required",
-      // confirmParams: {
-      //   return_url: "https://google.com",
-      // },
+      confirmParams: {
+        return_url: "https://stripe-nextjs-test-seven.vercel.app/success",
+      },
     });
 
     if (error) {
